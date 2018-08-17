@@ -44,6 +44,18 @@
       "kind": "wildcard",
       "dst": "gravatar.lug.ustc.edu.cn",
       "enable": true
+    },
+    {
+      "src": "e-hentai.org/g/",
+      "kind": "wildcard",
+      "dst": "exhentai.org/g/",
+      "enable": true
+    },
+    {
+      "src": "//ant.design/",
+      "kind": "wildcard",
+      "dst": "//ant-design.gitee.io/",
+      "enable": true
     }
   ],
   "cancel-rules": [],
