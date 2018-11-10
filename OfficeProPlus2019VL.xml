@@ -1,0 +1,8 @@
+<!-- https://www.microsoft.com/en-us/download/details.aspx?id=49117 -->
+<Configuration>
+  <Add OfficeClientEdition="64" >
+    <Product ID="ProPlus2019Volume" PIDKEY="NMMKJ-6RK4F-KMJVX-8D9MJ-6MWKP">
+        <Language ID="MatchOS" />
+     </Product>
+   </Add>  
+</Configuration>
