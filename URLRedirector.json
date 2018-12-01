@@ -1,0 +1,70 @@
+{
+  "version": "1.0",
+  "rules": [
+    {
+      "origin": "ajax.googleapis.com",
+      "target": "ajax.proxy.ustclug.org",
+      "enable": true
+    },
+    {
+      "origin": "fonts.googleapis.com",
+      "target": "fonts.proxy.ustclug.org",
+      "enable": true
+    },
+    {
+      "origin": "storage.googleapis.com",
+      "target": "storage-googleapis.proxy.ustclug.org",
+      "enable": true
+    },
+    {
+      "origin": "themes.googleusercontent.com",
+      "target": "google-themes.proxy.ustclug.org",
+      "enable": true
+    },
+    {
+      "origin": "fonts.gstatic.com",
+      "target": "fonts-gstatic.proxy.ustclug.org",
+      "enable": true
+    },
+    {
+      "origin": "platform.twitter.com/widgets.js",
+      "target": "cdn.jsdelivr.net/gh/jiacai2050/gooreplacer@gh-pages/proxy/widgets.js",
+      "enable": true
+    },
+    {
+      "origin": "apis.google.com/js/api.js",
+      "target": "cdn.jsdelivr.net/gh/jiacai2050/gooreplacer@gh-pages/proxy/api.js",
+      "enable": true
+    },
+    {
+      "origin": "apis.google.com/js/plusone.js",
+      "target": "cdn.jsdelivr.net/gh/jiacai2050/gooreplacer@gh-pages/proxy/plusone.js",
+      "enable": true
+    },
+    {
+      "origin": "gerrit.googlesource.com",
+      "target": "gerrit-googlesource.proxy.ustclug.org",
+      "enable": true
+    },
+    {
+      "origin": "secure.gravatar.com",
+      "target": "gravatar.proxy.ustclug.org",
+      "enable": true
+    },
+    {
+      "origin": "www.gravatar.com/avatar",
+      "target": "fdn.geekzu.org/avatar",
+      "enable": true
+    },
+    {
+      "origin": "[0-2].gravatar.com/avatar",
+      "target": "fdn.geekzu.org/avatar",
+      "enable": true
+    },
+    {
+      "origin": "ant.design",
+      "target": "ant-design.gitee.io",
+      "enable": true
+    }
+  ]
+}
