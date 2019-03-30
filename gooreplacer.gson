@@ -1,7 +1,7 @@
 {
   "createBy": "http://liujiacai.net/gooreplacer/",
   "version": "3.9.2",
-  "createAt": "Fri Jun 29 2018 00:18:37 GMT+0800",
+  "createAt": "Fri Jun 29 2018 00:19:37 GMT+0800",
   "redirect-rules": [
     {
       "src": "fonts.googleapis.com",
@@ -37,6 +37,12 @@
       "src": "storage.googleapis.com",
       "kind": "wildcard",
       "dst": "storage-googleapis.lug.ustc.edu.cn",
+      "enable": true
+    },
+    {
+      "src": "www.google.com/recaptcha/",
+      "kind": "wildcard",
+      "dst": "recaptcha.net/recaptcha/",
       "enable": true
     },
     {
