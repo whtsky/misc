@@ -40,9 +40,9 @@
       "enable": true
     },
     {
-      "src": "secure.gravatar.com",
+      "src": "secure.gravatar.com/avatar/",
       "kind": "wildcard",
-      "dst": "gravatar.lug.ustc.edu.cn",
+      "dst": "cdn.v2ex.com/gravatar/",
       "enable": true
     },
     {
