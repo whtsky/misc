@@ -1,7 +1,7 @@
 {
   "createBy": "http://liujiacai.net/gooreplacer/",
   "version": "3.9.2",
-  "createAt": "Fri Jun 29 2018 00:20:37 GMT+0800",
+  "createAt": "Fri Jun 29 2018 00:20:38 GMT+0800",
   "redirect-rules": [
     {
       "src": "fonts.googleapis.com",
@@ -28,12 +28,6 @@
       "enable": true
     },
     {
-      "src": "downloads.openwrt.org",
-      "kind": "wildcard",
-      "dst": "openwrt.lug.ustc.edu.cn",
-      "enable": true
-    },
-    {
       "src": "www.google.com/recaptcha/",
       "kind": "wildcard",
       "dst": "recaptcha.net/recaptcha/",
@@ -46,15 +40,9 @@
       "enable": true
     },
     {
-      "src": "e-hentai.org/g/",
+      "src": "i.pximg.net",
       "kind": "wildcard",
-      "dst": "exhentai.org/g/",
-      "enable": true
-    },
-    {
-      "src": "//ant.design/",
-      "kind": "wildcard",
-      "dst": "//ant-design.gitee.io/",
+      "dst": "i.pixiv.cat",
       "enable": true
     }
   ],
