@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding:utf-8 -*-
 
-# https://github.com/bookfere/BookFere-Tools/blob/dc855679e8badb243050357831c19292d71c966e/bookfere-tools/bin/sdr-cleaner/sdr_cleaner.py
-
 import glob
 import os
 import re
@@ -14,52 +12,40 @@ from pathlib import Path
 
 
 # Process
-def onProcess(kindlePath):
-    documentsPath = kindlePath + "/documents"
-
-    if not os.path.exists(documentsPath):
+def process_dir(documents_path: Path):
+    if not documents_path.exists():
         return
 
-    list_dirs = os.walk(documentsPath)
-
-    # Clean SDR Folder
-    for root, dirs, files in list_dirs:
-        if dirs:
-            os.chdir(root)
-
-            sdr = glob.glob(r"*.sdr")
-            # todo: use set
-            documents = reduce(
-                lambda a, ext: a + glob.glob(r"*." + ext),
-                [
-                    "azw",
-                    "azw3",
-                    "pdf",
-                    "txt",
-                    "prc",
-                    "mobi",
-                    "pobi",
-                    "epub",
-                    "azw4",
-                    "kfs",
-                    "kfx",
-                ],
-                [],
-            )
-            format_sdr = False
-
-            for sdr_folder in sdr:
-                found = False
-                for document in documents:
-                    if Path(document).stem == Path(sdr_folder).stem:
-                        found = True
-                        break
-                if not found:
-                    print("Remove {}".format(sdr_folder))
-                    shutil.rmtree(sdr_folder)
-                break
+    documents = reduce(
+        lambda a, ext: a + list(documents_path.glob("*." + ext)),
+        [
+            "azw",
+            "azw3",
+            "pdf",
+            "txt",
+            "prc",
+            "mobi",
+            "pobi",
+            "epub",
+            "azw4",
+            "kfs",
+            "kfx",
+        ],
+        [],
+    )
+    for sdr_folder in documents_path.glob("*.sdr"):
+        found = False
+        for document in documents:
+            if document.stem == sdr_folder.stem:
+                found = True
+        if not found:
+            print("Remove {}".format(sdr_folder))
+            shutil.rmtree(sdr_folder)
+    for sub_path in documents_path.iterdir():
+        if sub_path.is_dir():
+            process_dir(sub_path)
 
 
 # Execute
 if __name__ == "__main__":
-    onProcess(os.path.dirname(os.path.realpath(__file__)))
+    process_dir(Path(__file__).parent / "documents")
