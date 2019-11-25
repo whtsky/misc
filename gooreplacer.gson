@@ -1,38 +1,8 @@
 {
   "createBy": "http://liujiacai.net/gooreplacer/",
   "version": "3.9.2",
-  "createAt": "Fri Jun 29 2018 00:20:38 GMT+0800",
+  "createAt": "Fri Jun 29 2018 00:20:39 GMT+0800",
   "redirect-rules": [
-    {
-      "src": "fonts.googleapis.com",
-      "kind": "wildcard",
-      "dst": "fonts.lug.ustc.edu.cn",
-      "enable": true
-    },
-    {
-      "src": "ajax.googleapis.com",
-      "kind": "wildcard",
-      "dst": "ajax.lug.ustc.edu.cn",
-      "enable": true
-    },
-    {
-      "src": "themes.googleusercontent.com",
-      "kind": "wildcard",
-      "dst": "google-themes.lug.ustc.edu.cn",
-      "enable": true
-    },
-    {
-      "src": "fonts.gstatic.com",
-      "kind": "wildcard",
-      "dst": "fonts-gstatic.lug.ustc.edu.cn",
-      "enable": true
-    },
-    {
-      "src": "www.google.com/recaptcha/",
-      "kind": "wildcard",
-      "dst": "recaptcha.net/recaptcha/",
-      "enable": true
-    },
     {
       "src": "secure.gravatar.com/avatar/",
       "kind": "wildcard",
