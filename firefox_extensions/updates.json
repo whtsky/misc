@@ -1,0 +1,13 @@
+{
+  "addons": {
+    "{783d123e-5ffb-4fd7-9004-2c602666517d}": {
+      "updates": [
+        {
+          "version": "1.5.1",
+          "update_link": "https://misc.tt.codes/firefox_extensions/pt_plugin_plus/pt_plugin_plus-1.5.1-fx.xpi",
+          "update_hash": "sha256:c4ed91aecbb102282bb8df99663f27c90cc91bb4623e63dba2da291cc99bbfcf"
+        }
+      ]
+    }
+  }
+}
